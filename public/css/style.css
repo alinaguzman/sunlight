@@ -20,7 +20,7 @@ li {
 
 .favorites {
     margin-left: 100px;
-    float: left
+    float: left;
 }
 
 .member {
@@ -42,7 +42,7 @@ button:hover {
 }
 
 .header{
-    background-color: rgba(202,202,202,4);
+    background-color: rgba(202,202,202,.4);
     margin-left: -10px;
     margin-right: -5px;
     padding: 10px;
@@ -56,5 +56,5 @@ button:hover {
 
 .header a {
     text-decoration: none;
-    color: #000
+    color: #000;
 }

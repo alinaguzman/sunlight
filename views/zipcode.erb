@@ -4,9 +4,18 @@
     <div class="member" ><li>
       <%= member.firstname %> <%= member.lastname %>
         <ul>
+          <% if member.party == "D" %>
+              <li>Democrat</li>
+          <% elsif member.party == "R" %>
+          <li>Republican</li>
+          <% else %>
           <li><%= member.party %></li>
+          <% end %>
+
           <li><%= member.phone %></li>
-          <li>@<%= member.twitter_id %></li>
+          <% if member.twitter_id %>
+              <li><%= member.twitter_id %></li>
+          <% end %>
           <li><%= member.state %></li>
           <li><%= member.in_office %></li>
           <li><%= member.votesmart_id %></li>
